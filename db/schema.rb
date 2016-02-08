@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20160129044320) do
 
   create_table "audios", force: :cascade do |t|
-    t.string   "title"
-    t.string   "attachment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title",      limit: 255
+    t.string   "attachment", limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
